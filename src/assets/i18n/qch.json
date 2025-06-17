@@ -1,6 +1,11 @@
 {
+  "HOME": "Ñawpaq",
   "HELLO": "Rimaykullayki",
-  "START_NOW": "Qallariy Kunan",
-  "REGISTER": "Qillqaykuy",
-  "STUDENT_ACCESS": "Yachakuqkunapaq Yaykuy"
+  "START_NOW": "Ñawpa karuy",
+  "REGISTER": "Kawsaykuy",
+  "STUDENT_ACCESS": "Yachachik Access",
+  "ADMIN_PANEL": "Maqta Riqsiy",
+  "ABOUT_US": "Ñuqanchik",
+  "CONTACT": "Riqsiykuy",
+  "GAME": "Wasiñ"
 }
