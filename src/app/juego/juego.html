@@ -1,0 +1,46 @@
+<app-header></app-header>
+
+<div class="hangman-container">
+    <h2 class="hangman-title">Juego del Ahorcado</h2>
+    <div class="hangman-figure">
+        <svg width="120" height="180">
+            <!-- Base -->
+            <line x1="10" y1="170" x2="110" y2="170" stroke="#2176ae" stroke-width="4" />
+            <!-- Poste vertical -->
+            <line x1="30" y1="170" x2="30" y2="20" stroke="#2176ae" stroke-width="4" />
+            <!-- Poste horizontal -->
+            <line x1="30" y1="20" x2="80" y2="20" stroke="#2176ae" stroke-width="4" />
+            <!-- Cuerda -->
+            <line x1="80" y1="20" x2="80" y2="40" stroke="#2176ae" stroke-width="4" />
+            <!-- Cabeza -->
+            <circle *ngIf="attemptsLeft <= 5" cx="80" cy="50" r="10" stroke="#2176ae" stroke-width="3" fill="none" />
+            <!-- Cuerpo -->
+            <line *ngIf="attemptsLeft <= 4" x1="80" y1="60" x2="80" y2="100" stroke="#2176ae" stroke-width="3" />
+            <!-- Brazo izquierdo -->
+            <line *ngIf="attemptsLeft <= 3" x1="80" y1="70" x2="65" y2="90" stroke="#2176ae" stroke-width="3" />
+            <!-- Brazo derecho -->
+            <line *ngIf="attemptsLeft <= 2" x1="80" y1="70" x2="95" y2="90" stroke="#2176ae" stroke-width="3" />
+            <!-- Pierna izquierda -->
+            <line *ngIf="attemptsLeft <= 1" x1="80" y1="100" x2="70" y2="130" stroke="#2176ae" stroke-width="3" />
+            <!-- Pierna derecha -->
+            <line *ngIf="attemptsLeft <= 0" x1="80" y1="100" x2="90" y2="130" stroke="#2176ae" stroke-width="3" />
+        </svg>
+    </div>
+    <div class="hangman-word">
+        <span *ngFor="let letter of displayedWord">{{ letter }}</span>
+    </div>
+    <div class="hangman-letters">
+        <button *ngFor="let letter of alphabet" [disabled]="guessedLetters.includes(letter)"
+            (click)="guessLetter(letter)">
+            {{ letter }}
+        </button>
+    </div>
+    <div class="hangman-status">
+        <p>Intentos restantes: {{ attemptsLeft }}</p>
+        <p *ngIf="gameStatus === 'won'" class="hangman-win">¡Felicidades! Has ganado 🎉</p>
+        <p *ngIf="gameStatus === 'lost'" class="hangman-lose">Perdiste. La palabra era: <strong>{{ word }}</strong></p>
+    </div>
+    <button class="hangman-restart" (click)="restartGame()">Reiniciar Juego</button>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,124 @@
+.hero {
+    background: #5a9ec6;
+    color: #fff;
+    padding: 3rem 0 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 300px;
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: left;
+    margin-left: 2.5rem;
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin-right: 2.5rem;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: #2e9cca;
+    color: #fff;
+    border-radius: 1.5rem;
+    padding: 0.3rem 1.2rem;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+    border: 1px solid #fff;
+}
+
+.hero-badge:hover {
+    background: #176ca8;
+    color: #eaf6fb;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: 0.05em;
+    font-family: 'Beautifully Delicious', cursive;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 0 1.2rem 0;
+}
+
+.underline {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.hero-desc {
+    font-size: 1.1rem;
+    color: #eaf6fb;
+    margin-bottom: 1.5rem;
+}
+
+.access-panel {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 2rem 0 1rem 0;
+    padding-left: 0;
+}
+
+.access-btn {
+    display: flex;
+    align-items: center;
+    background: #eaf6fb;
+    color: #2e9cca;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.98rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: background 0.2s, color 0.2s;
+    min-width: 180px;
+}
+
+.access-btn .icon {
+    margin-right: 0.6rem;
+    font-size: 1.1rem;
+}
+
+.access-btn.admin {
+    background: #fff;
+    color: #3a7ca5;
+    border: 1.5px solid #3a7ca5;
+}
+
+.access-btn:hover {
+    background: #d0eaf7;
+}
+
+.access-btn.admin:hover {
+    background: #eaf6fb;
+    color: #28587b;
+}
+
+.hero-image {
+    width: 320px;
+    /* O el tamaño que quieras */
+    height: auto;
+    /* O un alto fijo, si lo prefieres */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

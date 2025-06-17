@@ -1,0 +1,72 @@
+/* Estilos para cta-section */
+.cta-section {
+    background: #5a9ec6;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 auto;
+    max-width: 100vw;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-container {
+    background: rgba(60, 100, 160, 0.85);
+    border-radius: 1.5rem;
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    max-width: 700px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    width: 90%;
+}
+
+.cta-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.cta-desc {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+    background: #fff;
+    color: #4f8cff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.75rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.cta-btn:hover {
+    background: #4f8cff;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.cta-divider {
+    border: none;
+    border-top: 2px solid #fff;
+    margin: 2rem auto 0 auto;
+    width: 60%;
+    opacity: 0.25;
+}

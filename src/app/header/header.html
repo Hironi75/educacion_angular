@@ -1,0 +1,79 @@
+<!-- Barra de navegación superior -->
+<nav class="navbar">
+    <div class="navbar-logo">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=school" />
+        <span class="material-symbols-outlined" style="color: #5a9ec6; font-size: 48px;">school</span>
+        &nbsp;
+        <span class="brand">EduPlost</span>
+    </div>
+    <ul class="navbar-links">
+        <li><a href="#">{{ 'HOME' | translate }}</a></li>
+        <li><a href="#">{{ 'STUDENT_ACCESS' | translate }}</a></li>
+        <li><a href="#">{{ 'ADMIN_PANEL' | translate }}</a></li>
+        <li><a routerLink="/nosotros">{{ 'ABOUT_US' | translate }}</a></li>
+        <li><a href="#">{{ 'CONTACT' | translate }}</a></li>
+        <li><a routerLink="/juego">{{ 'GAME' | translate }}</a></li>
+    </ul>
+    <div class="navbar-actions">
+        <button class="btn-outline" (click)="showLogin = !showLogin">{{ 'START_NOW' | translate }}</button>
+        <!-- Sección de login modal -->
+        <div class="login-modal" *ngIf="showLogin">
+            <div class="login-modal-content">
+                <span class="close-btn" (click)="showLogin = false">&times;</span>
+                <h2>{{ 'LOGIN' | translate }}</h2>
+                <form (submit)="onLoginSubmit($event)">
+                    <label for="email">{{ 'EMAIL' | translate }}</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">{{ 'PASSWORD' | translate }}</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit" class="btn-primary">{{ 'LOGIN' | translate }}</button>
+                    <div class="register-link">
+                        {{ 'NO_ACCOUNT' | translate }} <a href="#" (click)="showLogin = false; showRegister = true"
+                            class="register-action">{{ 'REGISTER' | translate }}</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="login-modal" *ngIf="showRegister">
+            <div class="login-modal-content">
+                <span class="close-btn" (click)="showRegister = false">&times;</span>
+                <h2>{{ 'REGISTER' | translate }}</h2>
+                <form (submit)="onRegisterSubmit($event)">
+                    <label for="reg-nombre">{{ 'FULL_NAME' | translate }}</label>
+                    <input type="text" id="reg-nombre" name="nombre" required>
+                    <label for="reg-email">{{ 'EMAIL' | translate }}</label>
+                    <input type="email" id="reg-email" name="email" required>
+                    <label for="reg-password">{{ 'PASSWORD' | translate }}</label>
+                    <input type="password" id="reg-password" name="password" required>
+                    <label for="reg-password2">{{ 'CONFIRM_PASSWORD' | translate }}</label>
+                    <input type="password" id="reg-password2" name="password2" required>
+                    <button type="submit" class="btn-primary">{{ 'CREATE_ACCOUNT' | translate }}</button>
+                    <div class="register-link">
+                        {{ 'ALREADY_HAVE_ACCOUNT' | translate }} <a href="#"
+                            (click)="showRegister = false; showLogin = true" class="register-action">{{ 'LOGIN' |
+                            translate }}</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button class="btn-primary" (click)="showRegister = true; showLogin = false">{{ 'REGISTER' | translate
+            }}</button>
+        <div class="dropdown lang-dropdown" tabindex="0">
+            <button class="btn-outline lang-action" id="langBtn" type="button" aria-haspopup="listbox"
+                aria-expanded="false">
+                <span class="icon-globe">🌐</span>
+            </button>
+            <div class="dropdown-content" id="langMenu" role="listbox">
+                <a href="#" (click)="setLang('es'); $event.preventDefault()">esp</a>
+                <a href="#" (click)="setLang('qch'); $event.preventDefault()">qch</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    function setLang(lang) {
+        document.getElementById('langLabel').textContent = lang;
+        document.getElementById('langBtn').blur();
+    }
+</script>

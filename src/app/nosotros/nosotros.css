@@ -1,0 +1,337 @@
+/* Estilos para la sección Nosotros */
+body {
+    background: #f4f8fb;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nosotros-section {
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.nosotros-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #2176ae;
+    text-align: center;
+}
+
+.nosotros-content {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(33, 118, 174, 0.06);
+    padding: 2rem 2rem 1.5rem 2rem;
+}
+
+.nosotros-content ul {
+    text-align: left;
+    margin: 1.5rem auto;
+    max-width: 700px;
+}
+
+.nosotros-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.nosotros-quote {
+    font-style: italic;
+    color: #2176ae;
+    margin: 2rem 0 0 0;
+    font-size: 1.1rem;
+}
+
+/* Estilos para la sección Presentación */
+.presentacion {
+    background: #5a9ec6;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 16px;
+    margin: 2rem auto 2.5rem auto;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(33, 118, 174, 0.08);
+    max-width: 900px;
+}
+
+.presentacion-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.presentacion-desc {
+    font-size: 1.3rem;
+    color: #f0f0f0;
+    margin-bottom: 0;
+}
+
+.videos-section {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.videos-section h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2176ae;
+    font-size: 1.4rem;
+}
+
+.videos-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-placeholder {
+    width: 580px;
+    height: 340px;
+    background: #eaf6fb;
+    border: 2px dashed #2176ae;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2176ae;
+    font-size: 1.1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(33, 118, 174, 0.08);
+}
+
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.social-links li a {
+    color: #2176ae;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.social-links li a:hover {
+    color: #17496b;
+}
+
+.footer {
+    margin-top: 3rem;
+}
+
+.about-section {
+    max-width: 1100px;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    gap: 2.5rem;
+}
+
+.about-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-text {
+    flex: 1 1 350px;
+    text-align: left;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(33, 118, 174, 0.10);
+    padding: 2rem 2rem 1.5rem 2rem;
+    min-width: 260px;
+}
+
+.about-title {
+    color: #2176ae;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.about-text p {
+    font-size: 1.13rem;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.about-media {
+    flex: 0 0 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-media iframe {
+    width: 370px;
+    height: 210px;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(33, 118, 174, 0.13);
+    border: 2px solid #eaf6fb;
+    background: #eaf6fb;
+}
+
+.about-quote {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-quote blockquote {
+    font-style: italic;
+    color: #2176ae;
+    font-size: 1.18rem;
+    background: #eaf6fb;
+    border-radius: 12px;
+    padding: 1.2rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(33, 118, 174, 0.06);
+    display: inline-block;
+    max-width: 600px;
+}
+
+.about-quote span {
+    display: block;
+    margin-top: 0.7rem;
+    color: #17496b;
+    font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+
+    .about-row,
+    .about-row.reverse {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .about-media,
+    .about-text {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        min-width: unset;
+    }
+
+    .about-media iframe {
+        width: 100%;
+        max-width: 370px;
+        height: 180px;
+    }
+
+    .about-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-title {
+        font-size: 1.3rem;
+    }
+
+    .about-media iframe {
+        max-width: 98vw;
+        height: 120px;
+    }
+
+    .about-text {
+        padding: 1rem 0.5rem 0.7rem 0.5rem;
+        font-size: 0.98rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .nosotros-hero {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        padding: 1.5rem 1rem 1.5rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .nosotros-hero-img {
+        margin: 0 auto 1.2rem auto;
+        justify-content: center;
+    }
+
+    .nosotros-hero-img img {
+        width: 100%;
+        max-width: 320px;
+        height: 180px;
+    }
+
+    .nosotros-hero-content {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .nosotros-hero {
+        padding: 1rem 0.2rem 1rem 0.2rem;
+        border-radius: 10px;
+    }
+
+    .nosotros-main-title {
+        font-size: 1.7rem;
+    }
+
+    .nosotros-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .nosotros-hero-img img {
+        max-width: 95vw;
+        height: 120px;
+    }
+
+    .nosotros-content {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        font-size: 1rem;
+    }
+
+    .nosotros-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .nosotros-hero {
+        padding: 0.5rem 0.1rem 0.5rem 0.1rem;
+    }
+
+    .nosotros-main-title {
+        font-size: 1.2rem;
+    }
+
+    .nosotros-content {
+        padding: 0.7rem 0.2rem 0.7rem 0.2rem;
+        font-size: 0.95rem;
+    }
+}

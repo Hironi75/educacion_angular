@@ -1,0 +1,146 @@
+/* Estilos para el componente Footer */
+.footer {
+    background: #232323;
+    color: #fff;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    width: 100%;
+}
+
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 2.5rem 1rem 2.5rem;
+    background: #232323;
+}
+
+.footer-col {
+    flex: 1 1 180px;
+    margin: 0 1.5rem 1rem 0;
+    min-width: 180px;
+}
+
+.logo-col {
+    max-width: 260px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.footer-logo-img {
+    margin-right: 0.7rem;
+    width: 48px;
+    height: 48px;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.footer-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    color: #d0d0d0;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+.footer-social span {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.footer-icon {
+    width: 22px;
+    height: 22px;
+    filter: invert(1);
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.footer-icon:hover {
+    opacity: 1;
+}
+
+.footer-heading {
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+}
+
+.footer-col ul {
+    list-style: disc inside;
+    padding-left: 0;
+}
+
+.footer-col ul li {
+    list-style-type: disc;
+    margin-left: 1em;
+    margin-bottom: 0.5rem;
+    font-size: 0.98rem;
+    color: #e0e0e0;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.97rem;
+}
+
+.footer-icon-sm {
+    width: 18px;
+    height: 18px;
+    filter: invert(1);
+    opacity: 0.8;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 2px solid #888;
+    margin: 0 0 0 0;
+}
+
+.footer-copy {
+    background: #232323;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.7rem 0 0.7rem 0;
+    letter-spacing: 0.5px;
+}
+
+.footer-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: #5a9ec6;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .footer-main {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    .footer-col {
+        margin-bottom: 1.5rem;
+    }
+}

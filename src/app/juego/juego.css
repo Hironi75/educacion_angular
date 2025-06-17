@@ -1,0 +1,116 @@
+/* Estilos modernos y responsivos para el juego del ahorcado */
+.hangman-container {
+    max-width: 500px;
+    margin: 2.5rem auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(33, 118, 174, 0.10);
+    padding: 2.5rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.hangman-title {
+    color: #2176ae;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.hangman-word {
+    font-size: 2.2rem;
+    letter-spacing: 0.7rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Segoe UI Mono', 'Consolas', monospace;
+    color: #17496b;
+}
+
+.hangman-letters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.hangman-letters button {
+    background: #eaf6fb;
+    color: #2176ae;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.hangman-letters button:disabled {
+    background: #bcd2e8;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.hangman-status {
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.hangman-win {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.hangman-lose {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.hangman-restart {
+    background: #2176ae;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 0.7rem 1.7rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.hangman-restart:hover {
+    background: #17496b;
+}
+
+.hangman-figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.hangman-figure svg {
+    background: #eaf6fb;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(33, 118, 174, 0.08);
+}
+
+@media (max-width: 600px) {
+    .hangman-container {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+    }
+
+    .hangman-title {
+        font-size: 1.3rem;
+    }
+
+    .hangman-word {
+        font-size: 1.3rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .hangman-letters button {
+        font-size: 1rem;
+        padding: 0.4rem 0.7rem;
+    }
+}
