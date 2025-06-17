@@ -1,6 +1,11 @@
 {
+  "HOME": "Inicio",
   "HELLO": "Hola",
   "START_NOW": "Empieza Ahora",
   "REGISTER": "Regístrate",
-  "STUDENT_ACCESS": "Acceso Estudiantes"
+  "STUDENT_ACCESS": "Acceso Estudiantes",
+  "ADMIN_PANEL": "Acceso Adminsitrador",
+  "ABOUT_US": "Nosotros",
+  "CONTACT": "Contactnos",
+  "GAME": "Juego"
 }
